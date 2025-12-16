@@ -18,7 +18,7 @@
                 <li><a href="mailto:ktuttle92@gmail.com" class="nav__link">Contact</a></li>
                 <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
             </ul>
-            </div>
+            
             <button class="btn__menu" onclick="openMenu()">
                 <i class="fa fa-bars"></i>
             </button>
@@ -27,9 +27,10 @@
                     <i class="fa fa-times"></i>
                 </button>
                 <ul class="menu__links">
-                    <li class="menu__list"><a href="#" class="menu__link">Home</a></li>
-                   <li class="menu__list"><a href="#features" class="menu__link">Books</a></li>
-                     <li class="menu__list"><a href="mailto:ktuttle92@gmail.com" class="menu__link">Contact</a></li>               </ul>
+                    <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Home</a></li>
+                   <li class="menu__list"><a href="#features" class="menu__link" onclick="closeMenu()">Books</a></li>
+                     <li class="menu__list"><a href="mailto:ktuttle92@gmail.com" class="menu__link" onclick="closeMenu()">Contact</a></li>               </ul>
+            </div>
             </div>
         </nav>
         <header>
@@ -37,9 +38,10 @@
                 <div class="header__description">
                     <h1>America's most awarded online library platform</h1>
                     <h2>Find you dream book with <span class="purple">Library.</span></h2>
+                    <a href="#features">
                     <button class="btn">
                         Browse Books
-                    </button>
+                    </button></a>
                 </div>
             <figure class="header__img--wrapper">
                 <img src="/assets/Undraw_Books.svg" alt="Books Illustration" class="header__illustration"/>
