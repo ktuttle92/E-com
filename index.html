@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <link rel="stylesheet" href="style..css">
+     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/e2160994a3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -13,16 +14,22 @@
             <div class="nav__container">
             <img src="/assets/Library.svg" alt="Library Logo" class="library__logo"/>
             <ul class="nav__links">
-                <li>
-                    <a href="#" class="nav__link">Home</a>
-                </li>
-                  <li>
-                    <a href="mailto:ktuttle92@gmail.com" class="nav__link">Contact</a>
-                </li>
-                  <li>
-                    <a href="#" class="nav__link nav__link--primary">Books</a>
-                </li>
+                <li><a href="#" class="nav__link">Home</a></li>
+                <li><a href="mailto:ktuttle92@gmail.com" class="nav__link">Contact</a></li>
+                <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
             </ul>
+            </div>
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fa fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list"><a href="#" class="menu__link">Home</a></li>
+                   <li class="menu__list"><a href="#features" class="menu__link">Books</a></li>
+                     <li class="menu__list"><a href="mailto:ktuttle92@gmail.com" class="menu__link">Contact</a></li>               </ul>
             </div>
         </nav>
         <header>
@@ -316,8 +323,8 @@
             <div class="container">
                 <div class="explore__books--row">
                     <h2>Explore more <span class="purple">Books</span></h2>
-                    
-                    <button class="btn">Browse books</button>
+                    <a href="#features">
+                    <button class="btn">Browse books</button></a>
                 </div>
             </div>
         </section>
